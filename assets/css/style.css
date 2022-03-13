@@ -101,72 +101,13 @@ button {
 }
 img{
   max-width: 100%;
+  vertical-align: middle;
   height: auto;
 }
-.sp{
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
-h1{
-  font-size: 30px;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 0.43px;
-  color: #101820;
-  margin-bottom: 17.6px;
-  text-transform: uppercase;
-}
-h1 span{
-  color: #00c1d5;
-}
-p{
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.28;
-  letter-spacing: 0.26px;
-  color: #101820;
-}
-p strong {
-	color: #101820;
-	font-size: 18px;
-	padding-bottom: 8px;
-	display: inline-block;
-}
-.bg_white{
-  background-color: white;
-}
-.pt_0{
-  padding-top: 0px;
-}
-.pb_0{
-  padding-bottom: 0px;
-}
-.small_button a {
-	font-family: Muli;
-	font-size: 16px;
-	font-weight: bold;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	text-align: center;
-	color: #ffffff;
-	border-radius: 4px;
-	background-color: #00c1d5;
-	padding: 8px 27px;
-	border-color: #00c1d5;
-	margin-top: 15px !important;
-	transition: 0.5s;
-	display: inline-block;
-}
-.small_button a:hover{
-	background-color: #101820;
-}
+
+
 #page-top {
     overflow-x: hidden !important;
-    overflow-y: scroll !important;
 }
 
 /* font-family: 'Bebas Neue', cursive; */
@@ -269,7 +210,150 @@ p strong {
 	line-height: 46px;
 	color: #43FEFF;
 }
+.wallet_profile_area {
+	background: #171721;
+	border-radius: 17px;
+	padding: 32px;
+	width: 420px;
+}
 .wallet_area_full {
 	background: rgba(41, 41, 41, 0.76);
 	border-radius: 17px;
+	display: flex;
+	justify-content: flex-start;
+}
+.wallet_profile_money {
+	padding: 36px;
+	width: 100%;
+}
+.wallet_single_item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	margin-bottom: 25px;
+}
+div.wallet_single_item > h3:nth-child(1){
+  width: 140px;
+}
+div.wallet_single_item > h3:nth-child(2){
+  width: 240px;
+}
+.wallet_single_item h3 {
+	text-align: left;
+	display: inline-block;
+	font-family: 'Death Star';
+	letter-spacing: 0.05em;
+	text-transform: capitalize;
+	color: #E4EDF5;
+	font-weight: 400;
+	font-size: 30px;
+}
+.wallet_single_item button {
+	letter-spacing: 0.1em;
+	text-transform: capitalize;
+	color: #38FEFF;
+	background: rgba(15, 15, 15, 0.21);
+	border: 0.25px solid #38FEFF;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-family: 'Death Star';
+	padding: 9px 22px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.wallet_single_item button:hover {
+	background: #000;
+	color: #FFF;
+	border: 1px solid #000;
+  transition: 0.5s;
+}
+.profile_image img {
+	width: 100%;
+	object-fit: cover;
+}
+.profile_image {
+	min-width: 119px;
+	min-height: 119px;
+}
+.profile_content {
+	margin-left: 30px;
+	text-align: center;
+	width: 100%;
+}
+.profile_image_area {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 24px;
+}
+.profile_content h2 {
+	text-transform: capitalize;
+	color: #E4EDF5;
+	font-family: 'Death Star';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	padding-bottom: 6px;
+}
+.profile_content p {
+	text-transform: capitalize;
+	color: rgba(228, 237, 245, 0.6);
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+}
+.profile_desc h2 {
+	text-transform: capitalize;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	padding-bottom: 30px;
+	font-family: 'Death Star';
+}
+.profile_desc h4 {
+	text-transform: capitalize;
+	color: #E4EDF5;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	padding-bottom: 8px;
+}
+.profile_desc h5 {
+	text-transform: capitalize;
+	color: #16FEFF;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	padding-bottom: 50px;
+}
+.btn_cus button {
+	background: linear-gradient(180deg, #181721 -33.75%, #22232D 208.75%);
+	box-shadow: 0px 13px 12px rgba(34, 133, 250, 0.04);
+	border-radius: 5px;
+	letter-spacing: 0.1em;
+	text-transform: capitalize;
+	color: #E4EDF5;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	border: none;
+	text-align: center;
+	padding: 7px 57px;
+  transition: 0.5s;
+}
+.btn_cus {
+	text-align: center;
+}
+
+.btn_cus button:hover {
+	background: #000;
+	color: #FFF;
+  transition: 0.5s;
 }
