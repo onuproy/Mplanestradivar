@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Striker';
+    src: url('Striker.woff2') format('woff2'),
+        url('Striker.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Death Star';
+    src: url('DeathStar.woff2') format('woff2'),
+        url('DeathStar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
