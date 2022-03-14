@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Muli' !important;
   top:0 !important;
   font-size: 16px;
   font-weight: 400;
@@ -171,7 +170,7 @@ img{
 	width: 20px;
 }
 
-.active {
+.active-menu {
 	border: 1px solid rgba(228, 237, 245, 0.1) !important;
 	box-sizing: border-box;
 	border-radius: 3px;
@@ -233,10 +232,10 @@ img{
 	text-align: left;
 	margin-bottom: 25px;
 }
-div.wallet_single_item > h3:nth-child(1){
+.wallet_profile_money div.wallet_single_item > h3:nth-child(1){
   width: 140px;
 }
-div.wallet_single_item > h3:nth-child(2){
+.wallet_profile_money div.wallet_single_item > h3:nth-child(2){
   width: 240px;
 }
 .wallet_single_item h3 {
@@ -247,7 +246,7 @@ div.wallet_single_item > h3:nth-child(2){
 	text-transform: capitalize;
 	color: #E4EDF5;
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 26px;
 }
 .wallet_single_item button {
 	letter-spacing: 0.1em;
@@ -257,10 +256,13 @@ div.wallet_single_item > h3:nth-child(2){
 	border: 0.25px solid #38FEFF;
 	box-sizing: border-box;
 	border-radius: 5px;
-	font-family: 'Death Star';
 	padding: 9px 22px;
-  font-weight: 400;
-  transition: 0.5s;
+	transition: 0.5s;
+	height: 41px;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
 }
 .wallet_single_item button:hover {
 	background: #000;
@@ -351,9 +353,245 @@ div.wallet_single_item > h3:nth-child(2){
 .btn_cus {
 	text-align: center;
 }
-
 .btn_cus button:hover {
 	background: #000;
 	color: #FFF;
   transition: 0.5s;
+}
+/* Deposit Css */
+.deposit_area_full {
+	
+	background: rgba(41, 41, 41, 0.76);
+	border-radius: 17px;
+	margin-top: 26px;
+}
+.deposit_top_area {
+	background: rgba(0, 0, 0, 0.11);
+	border-radius: 17px 17px 10px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 23px 36px 23px 32px;
+}
+.deposit_top_item h4 {
+	letter-spacing: 0.1em;
+	text-transform: capitalize;
+	color: #E4EDF5;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+}
+.deposit_top_item h4 span {
+	letter-spacing: 1px;
+}
+.deposit_top_item {
+	display: flex;
+	justify-content: flex-end;
+}
+.resupply_btn button {
+	background: #38FEFF;
+	box-shadow: 0px 4px 10px -7px #3A3A3A;
+	border-radius: 5px;
+	border: 1px solid #38FEFF;
+	margin-left: 25px;
+	letter-spacing: 0.1em;
+	text-transform: capitalize;
+	color: #4D4D4D;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	padding: 8px 5px;
+	width: 175px;
+  	transition: 0.5s;
+	height: 36px;
+}
+.resupply_btn button:hover {
+	background: #000;
+	color: #FFF;
+	transition: 0.5s;
+  border: 1px solid #000;
+}
+.deposit_single_item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 18px;
+}
+.deposit_id_area {
+	padding: 27px 26px 15px 40px;
+}
+.deposit_single_item h3 {
+	text-align: left;
+	display: inline-block;
+	font-family: 'Death Star';
+	letter-spacing: 0.05em;
+	text-transform: capitalize;
+	color: #E4EDF5;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: left;
+}
+
+.deposit_id_area div.deposit_single_item > h3:nth-child(1){
+  width: 195px;
+}
+.deposit_id_area div.deposit_single_item > h3:nth-child(2){
+  width: 257px;
+}
+
+.deposit_input {
+	padding: 9px 22px 9px 10px;
+	background: rgba(15, 15, 15, 0.21);
+	border: 0.25px solid #38FEFF;
+	box-sizing: border-box;
+	border-radius: 5px;
+  position: relative;
+}
+.deposit_input::after {
+	position: absolute;
+	content: "";
+	height: 30px;
+	width: 1px;
+	background-color: #5C5C5C;
+	left: 106px;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	margin: auto;
+}
+.deposit_input input {
+	letter-spacing: 0.1em;
+	text-transform: capitalize;
+	color: #797979;
+	background: transparent;
+	border: none;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	width: 70px;
+	margin-right: 26px;
+}
+.deposit_input button {
+	letter-spacing: 0.1em;
+	text-transform: capitalize;
+	color: #38FEFF;
+	background: transparent;
+	border: none;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+  padding-left: 8px;
+}
+.type_of_ships_section {
+	margin-top: 77px;
+	padding-bottom: 63px;
+}
+.type_of_title {
+	padding-bottom: 68px;
+}
+.type_of_title h2 {
+	font-family: 'Death Star';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 46px;
+	color: #43FEFF;
+}
+.type_of_title h2 span {
+	color: #FFF;
+}
+
+/* Slider Css  */
+.owl_single_item {
+	border: 1.5px solid rgba(255, 255, 255, 0.32);
+	box-sizing: border-box;
+	border-radius: 16px;
+	padding: 24px;
+	position: relative;
+	transition: 0.5s;
+	background: linear-gradient(360deg, #16181B 0%, rgba(22, 24, 27, 0) 70.26%);
+}
+.owl_detials_c {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
+}
+.love_icon {
+	width: 40px;
+	height: 40px;
+}
+.detals_btn a {
+	background: #38FEFF;
+	box-shadow: 0px 4px 10px -7px #3A3A3A;
+	border-radius: 5px;
+	letter-spacing: 0.1em;
+	text-transform: capitalize;
+	color: #414141;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	padding: 6px 50px;
+	display: inline-block;
+	line-height: 1.7;
+	height: 35px;
+	transition: 0.5s;
+}
+.detals_btn a:hover {
+	background: #000;
+	color: #FFF;
+	transition: 0.5s;
+}
+.id_btn h4 {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	display: inline-block;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
+	font-family: 'Bebas Neue';
+	text-align: center;
+	padding: 13px 32px;
+}
+
+.id_btn {
+	width: max-content;
+	position: absolute;
+	top: 37px;
+	right: 38px;
+	display: none;
+	transition: 0.5s;
+}
+.owl_single_item:hover .id_btn{
+	display: block;
+	transition: 0.5s;
+}
+
+.owl_detials_c_area {
+	display: none;
+	transition: 0.5s;
+}
+.owl_single_item:hover .owl_detials_c_area{
+	display: block;
+	transition: 0.5s;
+}
+
+.owl-theme .owl-nav {
+	margin-top: 0;
+	width: max-content;
+	position: absolute;
+	top: -122px;
+	right: 0;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: transparent;
+	color: #FFF;
+	text-decoration: none;
 }
